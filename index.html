@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .content h2{
+            display: flex;
+            flex-wrap: wrap;
+            width: 50vw;
+            font-size: 80px;
+            line-height: 80px;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        .nav{
+            width: 100%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 50px;
+            background-color: transparent;
+        }
+        .nav .middle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+
+        }
+        .middle a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: "Roboto";
+            text-transform: uppercase;
+        }
+        .logo{
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .page2{
+            width: 100%;
+            height: 100vh;
+            background-color: royalblue;
+            background-color: rgba(79, 174, 128, 0.513);
+
+        }
+        .mainnav{
+            position: fixed;
+            top: 0;
+            z-index: 101;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+        }
+        .maindropdownmenu{
+            width: 100%;
+            background-color: #ffffffbb;
+            height: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+        }
+        .maindropdownmenu a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdownmenu {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .dropdownmenu a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .dropdownmenu a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 8px 16px;
+            text-decoration: none;
+            display: block;
+            color: black;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdownmenu:hover .dropdown-content {
+            display: block;
+        }
+        .logo a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="mainnav">
+            <div class="nav">
+                <div class="logo"><a href="./index.html">Logo</a></div>
+                <div class="middle">
+                    <a href="./index.html">Home</a>
+                    <a href="">About</a>
+                    <a href="">Gallery</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+            <div class="maindropdownmenu">
+                <div class="dropdownmenu">
+                    <a href="">Kumaoun</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdownmenu">
+                    <a href="./calendar1.html">Destination</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdownmenu">
+                    <a href="">Testimonials</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdownmenu">
+                    <a href="">Bookings</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdownmenu">
+                    <a href="">Archives</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </nav>
+        <!-- header -->
+    <!-- slider -->
+
+    <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item active">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Mt._Nanda_Devi.jpg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Nanda Devi Peak</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./image/Jageswar banner.jpg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Jageshwar</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div id="thirdimg" class="item">
+                <img src="https://thetravelboat.com/wp-content/uploads/2023/01/image_6483441-2.jpg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Aadi Kailash</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div id="fourthimg" class="item">
+                <img src="https://miro.medium.com/v2/resize:fit:960/1*7hTpdAItaYdcgfYHdsjqjA.jpeg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Kailash Mansarovar</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://www.euttaranchal.com/tourism/photos/raj-bhawan-2679928.jpg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Raj Bhawan</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./image/kalitaal2.jpg">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Kali Tal</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://i.ytimg.com/vi/WqS2MwmV5jk/hq720_2.jpg?sqp=-oaymwEYCIADEOADSFryq4qpAwoIARUAAIhC0AEB&rs=AOn4CLCiho9oAlR4mBadNBt4l7J-IxydjQ">
+                <div class="content">
+                    <p>design</p>
+                    <h2>Birthifall</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Mt._Nanda_Devi.jpg">
+                <div class="content">
+                    Nanda Devi Peak (Almora)
+                </div>
+            </div>
+            <div class="item">
+                <img src="./image/Jageswar banner.jpg">
+                <div class="content">
+                    Jageshwar
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://thetravelboat.com/wp-content/uploads/2023/01/image_6483441-2.jpg">
+                <div class="content">
+                    Aadi Kailash
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://miro.medium.com/v2/resize:fit:960/1*7hTpdAItaYdcgfYHdsjqjA.jpeg">
+                <div class="content">
+                    Kailash Mansarovar
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://www.euttaranchal.com/tourism/photos/raj-bhawan-2679928.jpg">
+                <div class="content">
+                    Raj Bhawan
+                </div>
+            </div>
+            <div class="item">
+                <img src="./image/kalitaal2.jpg">
+                <div class="content">
+                    Kali Tal
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://i.ytimg.com/vi/WqS2MwmV5jk/hq720_2.jpg?sqp=-oaymwEYCIADEOADSFryq4qpAwoIARUAAIhC0AEB&rs=AOn4CLCiho9oAlR4mBadNBt4l7J-IxydjQ">
+                <div class="content">
+                    Birthifall
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page2">
+        <div class="about">
+            <h1> About Us </h1>
+            
+        </div>
+    </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
